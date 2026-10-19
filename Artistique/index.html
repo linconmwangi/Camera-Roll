@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nora Ellis is a wedding and portrait photographer documenting honest, beautiful stories across the Pacific Northwest."
+    />
+    <meta name="theme-color" content="#f6f3ec" />
+    <title>Artistique Pictures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Artistique Pictures, home">Artistique Pictures<span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#films">Films</a>
+        <a href="#pricing">Bookings</a>   #remove this section
+        <a class="nav-cta" href="#booking">Bookings <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=2200&q=88" alt="A couple sharing a quiet moment in a sunlit field" fetchpriority="high" />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span></span>PHOTOGRAPHER & STORYTELLER.</p>
+          <h1 id="hero-title">The beauty<br />of <em>being here.</em></h1>
+          <p class="hero-intro">For the way it felt, not just the way it looked.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#portfolio">View My Work<span>↘</span></a>
+            <a class="text-link light-link" href="#booking">Book a Session<span>↗</span></a>
+          </div>
+        </div>
+        <p class="hero-index">01 / 04 <span>—</span> STORIES THAT STAY</p>
+      </section>
+
+      <section class="intro-section section-pad" id="about">
+        <div class="intro-topline"><span>THE PERSON BEHIND THE LENS</span></div>
+        <div class="intro-grid">
+          <div class="intro-photo-wrap">
+            <img src="" alt="Uncle Alex's Photo" loading="lazy" /> #UNCLE ALEX'S PHOTO  
+            <span class="photo-note">usually looking for the light</span>
+          </div>
+          <div class="intro-copy">
+            <p class="eyebrow"><span class="eyebrow-mark">✳</span> A LITTLE ABOUT ME</p>
+            <h2>Hi, I am Alex Murage.<br /><em>I notice the little things others overlook.</em></h2>
+            <p class="body-copy">The shaky laugh before the vows. Your dad trying not to cry. The friends who never left the dance floor. Those are the moments I am here for.</p>
+            <p class="body-copy">For the past decade, I have photographed love stories with a documentary heart and an editorial eye. I will give you room to be yourselves, and gentle direction when you need it. The result? Photographs that feel a little like you.</p>
+            <a class="text-link" href="#booking">A little more about working together <span>↗</span></a>
+            <div class="stats-row">
+              <div><strong>10<span>+</span></strong><small>YEARS TELLING STORIES</small></div>
+              <div><strong>200<span>+</span></strong><small>CELEBRATIONS DOCUMENTED</small></div>
+              <div><strong>18<span>+</span></strong><small>COUNTIES VENTURED</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section section-pad" id="portfolio">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> A FEW THINGS I HAVE SEEN</p><h2>Stories in the wild.</h2></div>
+          <p class="section-aside">Real people, real feelings.<br />Always a little imperfect.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter portfolio">
+          <button class="filter-button active" data-filter="all" aria-pressed="true">The Full Scope <span>06</span></button>
+          <button class="filter-button" data-filter="weddings" aria-pressed="false">Weddings</button>
+          <button class="filter-button" data-filter="portraits" aria-pressed="false">Portraits</button>
+          <button class="filter-button" data-filter="events" aria-pressed="false">Events</button>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-card gallery-tall" data-category="weddings" data-index="0" aria-label="Open photo: A summer wedding in the garden">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1100&q=85" alt="Bride and groom embracing at their garden wedding" loading="lazy" />
+            <span class="gallery-caption"><small>WEDDINGS · WILLAMETTE VALLEY</small><strong>A summer kind of forever</strong></span><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button class="gallery-card gallery-wide" data-category="portraits" data-index="1" aria-label="Open photo: Portraits in late afternoon light">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=85" alt="Portrait of a woman in warm late afternoon light" loading="lazy" />
+            <span class="gallery-caption"><small>PORTRAITS · PORTLAND, OR</small><strong>Soft light, strong women</strong></span><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button class="gallery-card" data-category="events" data-index="2" aria-label="Open photo: Dinner under the trees">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85" alt="A long candlelit dinner table surrounded by friends" loading="lazy" />
+            <span class="gallery-caption"><small>EVENTS · HOOD RIVER</small><strong>Everyone around one table</strong></span><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          <button class="gallery-card gallery-tall" data-category="lifestyle" data-index="3" aria-label="Open photo: An afternoon at home">
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=85" alt="Parents sharing a tender moment with their young child" loading="lazy" />
+            <span class="gallery-caption"><small>LIFESTYLE · AT HOME</small><strong>The lovely ordinary</strong></span><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+          </button>
+          <button class="gallery-card gallery-wide" data-category="weddings" data-index="5" aria-label="Open photo: Just married by the coast">
+            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1200&q=85" alt="Newlyweds walking together at the water's edge" loading="lazy" />
+            <span class="gallery-caption"><small>WEDDINGS · OREGON COAST</small><strong>Salt in our hair, always</strong></span><span class="gallery-open" aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <p class="gallery-footnote">A SMALL WINDOW INTO A LOT OF LOVE <span>↗</span></p>
+      </section>
+
+      <section class="films-section section-pad" id="films">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> THE MOVING PICTURE</p><h2>Because some things<br />sound like <em>laughter.</em></h2></div>
+          <p class="section-aside">Little films for the voices,<br />the happy tears, the dance moves.</p>
+        </div>
+        <div class="films-grid">
+          <article class="film-card">
+            <button class="film-thumb" data-video="ScMzIvxBSi4" aria-label="Play film: The wilds of Mount Hood">
+              <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy" /><span class="play-button">▶</span><span class="film-time">02:14</span>
+            </button>
+            <div class="film-meta"><div><small>WEDDING FILM · MOUNT HOOD</small><h3>The wilds of Mount Hood</h3></div><span>01</span></div>
+            <p>A windy day, happy vows, and a whole lot of dancing.</p>
+          </article>
+          <article class="film-card">
+            <button class="film-thumb" data-video="ScMzIvxBSi4" aria-label="Play film: Sunday at the coast">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy" /><span class="play-button">▶</span><span class="film-time">01:48</span>
+            </button>
+            <div class="film-meta"><div><small>COUPLE SESSION · CANNON BEACH</small><h3>Sunday at the coast</h3></div><span>02</span></div>
+            <p>Somewhere between the fog and the last light.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="event-section section-pad" id="events">
+        <div class="event-image">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1500&q=85" alt="A vibrant outdoor wedding reception filled with flowers and candlelight" loading="lazy" />
+          <span class="event-image-label">A DAY THAT FELT LIKE THEM</span>
+        </div>
+        <div class="event-copy">
+          <p class="eyebrow"><span class="eyebrow-mark">✳</span> GATHERED TOGETHER</p>
+          <h2>Good people.<br /><em>Long tables.</em><br />One very full heart.</h2>
+          <p class="body-copy">Maya & Theo brought their favorite people to a little orchard outside Portland. There were wildflowers, family recipes, and a dance floor that refused to quit.</p>
+          <div class="event-details"><span>SEPTEMBER 14, 2025</span><span>SAUVIE ISLAND, OREGON</span></div>
+          <a class="text-link" href="#portfolio">See this story <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="pricing-section section-pad" id="pricing">
+        <div class="section-heading pricing-heading">
+          <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> THOUGHTFUL, NEVER ONE-SIZE-FITS-ALL</p><h2>Let’s make room<br />for <em>what matters.</em></h2></div>
+          <p class="section-aside">Every story gets my whole heart.<br />Here’s where we can begin.</p>
+        </div>
+        <div class="packages">
+          <article class="package">
+            <div class="package-top"><span>01 / THE ESSENTIAL</span><span>FOR THE INTIMATE DAY</span></div>
+            <h3>Just the good<br /><em>important stuff.</em></h3>
+            <p class="package-desc">For the day that’s all about being together, without the fuss.</p>
+            <p class="price">From <strong>$2,400</strong></p>
+            <ul><li>6 hours of wedding-day coverage</li><li>One photographer (me!)</li><li>Online gallery, ready to share</li><li>Planning call & timeline help</li></ul>
+            <a class="button button-outline" href="#booking" data-package="Essential">Ask about Essential <span>↗</span></a>
+          </article>
+          <article class="package package-featured">
+            <div class="package-top"><span>02 / THE SIGNATURE</span><span class="most-loved">A GOOD FAVORITE</span></div>
+            <h3>The whole story,<br /><em>beautifully told.</em></h3>
+            <p class="package-desc">A little extra breathing room, from the first hugs to the last song.</p>
+            <p class="price">From <strong>$3,600</strong></p>
+            <ul><li>Up to 9 hours of coverage</li><li>Second photographer included</li><li>Engagement session together</li><li>Hand-finished heirloom album</li></ul>
+            <a class="button button-dark" href="#booking" data-package="Signature">Ask about Signature <span>↗</span></a>
+          </article>
+          <article class="package">
+            <div class="package-top"><span>03 / THE LUXURY</span><span>FOR THE BIG GATHERING</span></div>
+            <h3>All the parts<br /><em>you’ll want back.</em></h3>
+            <p class="package-desc">Because one day just isn’t enough when everyone’s in town.</p>
+            <p class="price">From <strong>$5,200</strong></p>
+            <ul><li>Two days of celebration coverage</li><li>Two photographers all weekend</li><li>Engagement session & preview prints</li><li>Custom-designed heirloom album</li></ul>
+            <a class="button button-outline" href="#booking" data-package="Luxury">Ask about Luxury <span>↗</span></a>
+          </article>
+        </div>
+        <p class="pricing-note">Not sure what you need? <a href="#booking">Tell me a little about it</a> and we’ll figure it out together.</p>
+      </section>
+
+      <section class="testimonial-section section-pad" id="kind-words">
+        <div class="testimonial-heading"><p class="eyebrow"><span class="eyebrow-mark">✳</span> WORDS I KEEP CLOSE</p><span>NOTES FROM THE GOOD PEOPLE</span></div>
+        <div class="testimonial-grid">
+          <figure class="quote-card quote-featured"><span class="quote-mark">“</span><blockquote>Nora somehow made being in front of a camera feel like being with an old friend. Looking at our gallery is like stepping back into the day.</blockquote><figcaption><span class="client-avatar">M</span><span><strong>MAYA & THEO</strong><small>WEDDING · SAUVIE ISLAND</small></span><span class="quote-stars">★★★★★</span></figcaption></figure>
+          <figure class="quote-card"><span class="quote-mark">“</span><blockquote>She caught every little thing I didn’t even realize I’d want to remember. Our photos feel like us—on our very best day.</blockquote><figcaption><span class="client-avatar avatar-rust">J</span><span><strong>JAMIE & ALEX</strong><small>WEDDING · BEND, OREGON</small></span><span class="quote-stars">★★★★★</span></figcaption></figure>
+          <figure class="quote-card"><span class="quote-mark">“</span><blockquote>We’ve never had family photos where everyone actually looks happy. These are the ones we’ll pass down.</blockquote><figcaption><span class="client-avatar avatar-olive">R</span><span><strong>THE RIVERA FAMILY</strong><small>FAMILY SESSION · PORTLAND</small></span><span class="quote-stars">★★★★★</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="booking-section section-pad" id="booking">
+        <div class="booking-intro">
+          <p class="eyebrow"><span class="eyebrow-mark">✳</span> THIS IS THE FUN PART</p>
+          <h2>Tell me what<br />you’re <em>dreaming up.</em></h2>
+          <p class="body-copy">A date, a feeling, a napkin sketch of an idea — I’d love to hear it. I’ll be in your inbox within 24 hours, usually with a cup of tea in hand.</p>
+          <div class="availability"><span class="availability-dot"></span><span>NOW BOOKING</span><strong>2026 + 2027</strong></div>
+          <p class="booking-aside">A good place to start:<br /><span>What do you want it to feel like?</span></p>
+        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="form-heading"><span>01 — YOUR DETAILS</span><span>* REQUIRED</span></div>
+          <div class="form-grid">
+            <label>Full name *<input name="name" autocomplete="name" required placeholder="Your name" /></label>
+            <label>Email address *<input type="email" name="email" autocomplete="email" required placeholder="you@example.com" /></label>
+            <label>Phone number<input type="tel" name="phone" autocomplete="tel" placeholder="+1 (555) 000-0000" /></label>
+            <label>What are we celebrating? *
+              <select name="eventType" required>
+                <option value="" disabled selected>Choose your occasion</option><option>Wedding</option><option>Birthday</option><option>Corporate</option><option>Graduation</option><option>Engagement</option><option>Other</option>
+              </select>
+            </label>
+            <label>Event date<input type="date" name="date" /></label>
+            <label>Where will it be?<input name="location" placeholder="Venue, city, or still dreaming" /></label>
+            <label>About how many guests?<input type="number" name="guests" min="1" placeholder="A rough number is lovely" /></label>
+            <label>Package you’re curious about
+              <select name="package"><option value="">Still figuring it out</option><option>Essential</option><option>Signature</option><option>Luxury</option><option>Custom quote</option></select>
+            </label>
+            <label class="full-field">Tell me a little more <textarea name="message" rows="4" placeholder="The feeling, the details, the people you can't wait to have there..."></textarea></label>
+          </div>
+          <div class="form-submit-row"><button class="button button-dark" type="submit"><span class="submit-label">Send it my way</span><span class="submit-arrow">↗</span></button><span class="form-note">No pressure, ever. Just a conversation.</span></div>
+          <p class="form-status" id="booking-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="faq-section section-pad" id="faq">
+        <div class="faq-intro"><p class="eyebrow"><span class="eyebrow-mark">✳</span> GOOD QUESTIONS</p><h2>A few things<br />you might <em>wonder.</em></h2><p>Have a different question? <a href="#contact">Just ask me.</a></p></div>
+        <div class="faq-list">
+          <details><summary>How far in advance should we book? <span>+</span></summary><p>Most couples reach out 9–15 months ahead, especially for summer Saturdays. That said, lovely things happen last minute too—ask me about your date.</p></details>
+          <details><summary>Do you travel for events? <span>+</span></summary><p>Absolutely. I’m based in Portland and photograph all over the Pacific Northwest, with a few passport stamps every year. Tell me where you’re dreaming of and we’ll make a plan.</p></details>
+          <details><summary>What’s your cancellation policy? <span>+</span></summary><p>Your retainer reserves the date and is non-refundable. If plans change, I’ll always do my best to transfer your booking or help find a solution that feels fair.</p></details>
+          <details><summary>How long until we receive our photos? <span>+</span></summary><p>You’ll get a little preview within a week. Your full, hand-edited gallery arrives in 6–8 weeks, ready to download, share, and revisit as often as you like.</p></details>
+          <details><summary>Do you offer raw files? <span>+</span></summary><p>I don’t deliver raw files. Each photograph is carefully selected and edited to make a cohesive gallery that feels true to your day and to my work.</p></details>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact">
+        <div class="contact-top">
+          <div><p class="eyebrow"><span class="eyebrow-mark">✳</span> THE OTHER WAYS TO SAY HELLO</p><h2>Good things start<br />with <em>hello.</em></h2></div>
+          <div class="contact-details">
+            <a href="mailto:hello@noraellis.photo">hello@noraellis.photo <span>↗</span></a>
+            <a href="tel:+15035550147">+1 (503) 555-0147 <span>↗</span></a>
+            <p>Portland, Oregon <span>·</span> Available everywhere</p>
+            <div class="social-links"><a href="https://instagram.com" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://pinterest.com" target="_blank" rel="noreferrer">PINTEREST ↗</a><a href="https://tiktok.com" target="_blank" rel="noreferrer">TIKTOK ↗</a></div>
+          </div>
+        </div>
+        <div class="contact-bottom">
+          <form id="contact-form" class="contact-form">
+            <label class="visually-hidden" for="contact-name">Your name</label><input id="contact-name" name="name" required placeholder="Your name" />
+            <label class="visually-hidden" for="contact-email">Your email</label><input id="contact-email" type="email" name="email" required placeholder="Your email" />
+            <label class="visually-hidden" for="contact-message">What’s on your mind?</label><input id="contact-message" name="message" required placeholder="What’s on your mind?" />
+            <button type="submit" aria-label="Send contact message">↗</button>
+            <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="map-card"><iframe src="https://maps.google.com/maps?q=Portland%2C%20Oregon&amp;z=12&amp;output=embed" title="Map centered on Portland, Oregon" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>ROOTED IN THE PACIFIC NORTHWEST <strong>45°31' N · 122°40' W</strong></span><a href="https://maps.google.com/?q=Portland+Oregon" target="_blank" rel="noreferrer" aria-label="Open Portland in Google Maps">↗</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#top">NORA <span>ELLIS</span><i>PHOTO</i></a>
+      <p>Photographs for the life you’re living.</p>
+      <nav aria-label="Footer navigation"><a href="#about">ABOUT</a><a href="#portfolio">PORTFOLIO</a><a href="#pricing">INVESTMENT</a><a href="#booking">SAY HELLO</a></nav>
+      <span class="copyright">© 2026 NORA ELLIS · MADE WITH FEELING</span>
+    </footer>
+
+    <a class="whatsapp-button" href="https://wa.me/15035550147" target="_blank" rel="noreferrer" aria-label="Message Nora on WhatsApp"><span>✆</span></a>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <dialog class="lightbox" aria-label="Portfolio image viewer">
+      <button class="lightbox-close" aria-label="Close image viewer">×</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous photo">←</button>
+      <figure><img src="" alt="" /><figcaption></figcaption></figure>
+      <button class="lightbox-nav lightbox-next" aria-label="Next photo">→</button>
+      <span class="lightbox-count"></span>
+    </dialog>
+    <dialog class="video-dialog" aria-label="Video player"><button class="video-close" aria-label="Close video">×</button><div class="video-frame"></div></dialog>
+  </body>
+</html>
