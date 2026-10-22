@@ -102,8 +102,18 @@ document.querySelectorAll("[data-package]").forEach((button) => {
 });
 
 const bookingForm = document.querySelector("#booking-form");
+const phoneInput = bookingForm.querySelector('input[name="phone"]');
+const validateKenyanPhone = () => {
+  const number = phoneInput.value.trim().replace(/[\s()-]/g, "");
+  const isValid = !number || /^(?:\+254|0)[17]\d{8}$/.test(number);
+  phoneInput.setCustomValidity(
+    isValid ? "" : "Please enter a full mobile number, e.g.+254712345678 or 0712345678.",
+  );
+};
+phoneInput.addEventListener("input", validateKenyanPhone);
 bookingForm.addEventListener("submit", (event) => {
   event.preventDefault();
+  validateKenyanPhone();
   if (!bookingForm.reportValidity()) return;
   const submitButton = bookingForm.querySelector('button[type="submit"]');
   const label = submitButton.querySelector(".submit-label");
@@ -112,10 +122,10 @@ bookingForm.addEventListener("submit", (event) => {
   label.textContent = "Sending...";
   status.textContent = "";
   window.setTimeout(() => {
-    status.textContent = "Thank you! I’ll get back to you within 24 hours.";
+    status.textContent = "Thank you! I will get back to you within 24 hours.";
     bookingForm.reset();
     submitButton.disabled = false;
-    label.textContent = "Send it my way";
+    label.textContent = "Let us make it happen";
   }, 850);
 });
 
@@ -123,7 +133,7 @@ const contactForm = document.querySelector("#contact-form");
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!contactForm.reportValidity()) return;
-  document.querySelector("#contact-status").textContent = "Thanks for saying hello! I’ll be in touch soon.";
+  document.querySelector("#contact-status").textContent = "Thanks for saying hello! I will be in touch soon.";
   contactForm.reset();
 });
 
