@@ -1,0 +1,3 @@
+[build]
+  # The site lives in the Artistique folder, not the repository root.
+  publish = "Artistique"
